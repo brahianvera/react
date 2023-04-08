@@ -1,0 +1,29 @@
+1) You may use state only in parent component.
+2) To reduce the potential confusion between default and named exports, some teams choose to only 
+stick to one style (default or named), or avoid mixing them in a single file. Do what best for you!,
+3) Use camelCase in all atributes for a tag.
+4) You can pass JSX like props, and to acces it in the child component you need to use {children} in parameter for get the information. 
+5) Don't try change props instead of that use the state.
+6) returning null from a component isn't common because it might surprise a developer trying to render it.
+7) if you need to set a key for a this type of tag <> i won't be possible instead of that use <fragment></fragment>.
+8) the componets wraps needs a unique ID and you can create once whit an incrementing counter, crypto.randomUUID() or a package like uuid, You also can use  the  components call to add a key in that part like this example <Recipe {...recipe} key={recipe.id} />. Its better use this. READ: https://react.dev/learn/rendering-lists at the end.
+  8.1) KEYS MUST BE UNIQUE AMONG SIBLINGS. however, it's okay to use the same keys for JSX nodes in different arrays.
+  8.2) Keys mus not change or that defeats their purpose. dont create keys while rendering
+
+--USE REAC STRICT MODE TO CHECK FUNCTIONS. 
+
+-- Strict Mode has no effect in production, so it won’t slow down the app for your users. To opt into Strict Mode, you can wrap your root component into <React.StrictMode>. Some frameworks do this by default.
+
+
+-- CODE MORE DRY - DONT REPEAT YOURSELF
+
+
+//CONCEPTS.
+1) JSX and REACT isn't the same thing, JSX is an extension and REACT is a Library.
+2) Fragment <> JSX CODE </>,
+3) you can use converter HTML - JSX like the next one https://transform.tools/html-to-jsx, but maybe you can lose the 
+sense of the JSX code so that you can comfortably write JSX on your own.
+
+
+ENGLISH EXPRESION.
+- which we won’t dive into just yet. - aun no te lo hemos explicado 
