@@ -1,0 +1,4 @@
+1) handle usually defined inside my components.
+2) Have names that start with "handle", followed by the name of the event.
+3) Functions passed to event handlers must be passed(<button onCLick={handleClick}>), not called(<button onClick={handleClick()}>), this also applies to anonymous function.
+4) NAMING EVENT HANDLER PROPS: 
