@@ -1,4 +1,9 @@
 1) handle usually defined inside my components.
 2) Have names that start with "handle", followed by the name of the event.
 3) Functions passed to event handlers must be passed(<button onCLick={handleClick}>), not called(<button onClick={handleClick()}>), this also applies to anonymous function.
-4) NAMING EVENT HANDLER PROPS: 
+4) NAMING EVENT HANDLER PROPS,
+5) Reminder abour propagation. this means a parent and child can trigger the same event and same time, you can event propagation
+6) you can also preventing default behavier 
+7) EVENT HANDLERS CAN HAVE SIDE EFFECTS.  event handler don't  need to be pure, so it's a great place.
+8) whaterever function that srat with "use" is called a HOOk, "HOOKS" are only available while React is rendering. and only can be called at the top level of your components or "my own Hooks"
+9) const [something, setSomething] = useState(0), this is a convention so you add the word "set" then the state's name.
