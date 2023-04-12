@@ -7,3 +7,4 @@
 7) EVENT HANDLERS CAN HAVE SIDE EFFECTS.  event handler don't  need to be pure, so it's a great place.
 8) whaterever function that srat with "use" is called a HOOk, "HOOKS" are only available while React is rendering. and only can be called at the top level of your components or "my own Hooks"
 9) const [something, setSomething] = useState(0), this is a convention so you add the word "set" then the state's name.
+10) Hooks rely on a stable call order on every render of the same component,Internally, React holds an array of state pairs for event component. so this is the way how react know which state to return. for that reason is really important to follow 8 instruction. 
