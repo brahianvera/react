@@ -7,4 +7,6 @@
 7) EVENT HANDLERS CAN HAVE SIDE EFFECTS.  event handler don't  need to be pure, so it's a great place.
 8) whaterever function that srat with "use" is called a HOOk, "HOOKS" are only available while React is rendering. and only can be called at the top level of your components or "my own Hooks"
 9) const [something, setSomething] = useState(0), this is a convention so you add the word "set" then the state's name.
-10) Hooks rely on a stable call order on every render of the same component,Internally, React holds an array of state pairs for event component. so this is the way how react know which state to return. for that reason is really important to follow 8 instruction. 
+10) Hooks rely on a stable call order on every render of the same component,Internally, React holds an array of state pairs for event component. so this is the way how react know which state to return. for that reason is really important to follow 8 instruction. |THIS IDEA IS REALLY HELPFULL BECAUSE COMPONENTE ARE RENDEDRING A LOT OF TIMES SO REACT NEEDS TO KNOW IF THE ALREADY EXIST| please the next info: https://react.dev/learn/state-a-components-memory - How does React know which state to return? (DEEP DIVE)
+11) state is unique for each component's instance. So if you call the same component twice each instance will have their isolated state so Changing one of them will not affect the other. 
+12) unlike props state is totally private to the component who use it.
