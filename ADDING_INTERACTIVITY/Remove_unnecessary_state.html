@@ -19,13 +19,10 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { useState } from 'react';
-
 let App = function FeedbackForm() {
-  const [name, setName] = useState('');
-
+  let name = '';
   function handleClick() {
-    setName(prompt('What is your name?'));
+    name = prompt('What is your name?');
     alert(`Hello, ${name}!`);
   }
 
