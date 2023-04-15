@@ -10,3 +10,18 @@
 10) Hooks rely on a stable call order on every render of the same component,Internally, React holds an array of state pairs for event component. so this is the way how react know which state to return. for that reason is really important to follow 8 instruction. |THIS IDEA IS REALLY HELPFULL BECAUSE COMPONENTE ARE RENDEDRING A LOT OF TIMES SO REACT NEEDS TO KNOW IF THE ALREADY EXIST| please the next info: https://react.dev/learn/state-a-components-memory - How does React know which state to return? (DEEP DIVE)
 11) state is unique for each component's instance. So if you call the same component twice each instance will have their isolated state so Changing one of them will not affect the other. 
 12) unlike props state is totally private to the component who use it.
+13) don't add status in places where a regular variable works. 
+14) STRICT MODE help surface mistakes caused by impure functions.
+15) Rendering all components nested within the updated component is not optimal for performace if the updated component is very high in the tree. see the next documentation.  https://legacy.reactjs.org/docs/optimizing-performance.html
+
+
+NOTES:
+PROCESS RENDERING 
+TRIGGERING a render: Delevering the order
+   - Initial render.
+   - State has been updated.
+RENDERING the component: preparing order in kitchen
+   - On initial render.
+   - For subsequent renders.  React will call the function component whose state update triggered the render.
+COMMITTING to the DOM: placing the order on the table
+   - 
