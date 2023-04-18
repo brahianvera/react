@@ -13,6 +13,8 @@
 13) don't add status in places where a regular variable works. 
 14) STRICT MODE help surface mistakes caused by impure functions.
 15) Rendering all components nested within the updated component is not optimal for performace if the updated component is very high in the tree. see the next documentation.  https://legacy.reactjs.org/docs/optimizing-performance.html
+16) Reacts knows exactly what should be displayed on screen.
+
 
 
 NOTES:
@@ -22,6 +24,7 @@ TRIGGERING a render: Delevering the order
    - State has been updated.
 RENDERING the component: preparing order in kitchen
    - On initial render.
-   - For subsequent renders.  React will call the function component whose state update triggered the render.
+   - For subsequent renders.  React will call the function component whose state update triggered the render. Reacts knows exactly what should be displayed on screen.
 COMMITTING to the DOM: placing the order on the table
-   - 
+   - for the initial render: React will use the appendChild() DOM API to put all the DOM node it has created on screen
+   - For re-renders: React will apply the minimal necessary operations, react only changes the DOM nodes if there's a difference between renders. so reacts doesn't touch the DOM if the rendering resul is the same as last time.
