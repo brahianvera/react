@@ -16,6 +16,9 @@
 16) Reacts knows exactly what should be displayed on screen.
 17) States only updates its values when react render a component so this means that in the current render react will works whit the last states values or snapshot see this part of the documentation https://react.dev/learn/state-as-a-snapshot#rendering-takes-a-snapshot-in-time
 18) React take a snapshot at time when user interact with a component, so if you put an alert into a react component and that alert show a state value, react will work with the last value state  not with the current value that user changed. pleese see this.  https://react.dev/learn/state-as-a-snapshot#state-over-time
+19) BATCHING: React executes the eventHandlers code before update state
+18) Update the same state: You can update the same state before rendering the component, for that you have to use an updater function. 
+19) React queues: setNumber(n => n + 1) queues this functions to use previous states values and the queues are  executed after eventHandler code.
 
 
 NOTES:
