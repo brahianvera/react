@@ -19,6 +19,7 @@
 19) BATCHING: React executes the eventHandlers code before update state
 18) Update the same state: You can update the same state before rendering the component, for that you have to use an updaters function. 
 19) React queues: setNumber(n => n + 1) queues this functions to use previous states values and the queues are  executed after eventHandler code.
+  for points 18 and 19 see this link: https://react.dev/learn/queueing-a-series-of-state-updates#what-happens-if-you-update-state-after-replacing-it
 
 
 NOTES:
