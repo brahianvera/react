@@ -20,6 +20,9 @@
 18) Update the same state: You can update the same state before rendering the component, for that you have to use an updaters function. 
 19) React queues: setNumber(n => n + 1) queues this functions to use previous states values and the queues are  executed after eventHandler code.
   for points 18 and 19 see this link: https://react.dev/learn/queueing-a-series-of-state-updates#what-happens-if-you-update-state-after-replacing-it
+20) UPDATER FUNCTIONS MUST BE PURE AND ONLY RETURNS THE RESULT, DONT TRY TO SET STATE FROM INSIDE OF THEM OR RUN OTHER SIDE EFFECTS.
+21) NAMING CONVENTIONS TO UPDATER FUNCTIONS: use the first letter of corresponding state variable for example enabled use e or LastName use ln, or you can use more verboose code.
+
 
 
 NOTES:
