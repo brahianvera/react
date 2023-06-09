@@ -14,10 +14,10 @@ const CreatePrompt = () =>{
         tag:''
     })
 
+    console.log(session?.user.id)
     const createPrompt = async(e) =>{
         e.preventDefault();
         setSubmitting(true);
-        console.log("sdas");
         try{
             const response = await fetch('/api/prompt/new',{
                 method:'POST',
